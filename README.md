@@ -100,7 +100,7 @@ Example output:
 ### 6.2 Start Subsequent Nodes  
 Start a subsequent node and access its console:  
 ```bash  
-geth --port 30303 --networkid 16666 --datadir node --maxpeers 5000 --http --http.port 8545 --http.addr 0.0.0.0 --http.corsdomain "" --http.api "eth,net,web3,personal" --ws --ws.addr 0.0.0.0 --ws.port 8546 --allow-insecure-unlock console  
+geth --port 30303 --networkid 321123 --datadir node --maxpeers 5000 --http --http.port 8545 --http.addr 0.0.0.0 --http.corsdomain "" --http.api "eth,net,web3,personal" --ws --ws.addr 0.0.0.0 --ws.port 8546 --allow-insecure-unlock console  
 ```  
 
 
