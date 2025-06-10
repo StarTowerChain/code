@@ -126,8 +126,8 @@ Example output (successful connection shows the added enode):
   name: "Geth/v1.10.5-unstable-b89016b4-20210728/linux-amd64/go1.15.14",  
   network: {  
     inbound: false,  
-    localAddress: "172.26.0.225:53270",  
-    remoteAddress: "15.188.81.51:30303",  
+    localAddress: "******:53270",  
+    remoteAddress: "******:30303",  
     static: false,  
     trusted: false  
   },  
@@ -154,14 +154,14 @@ personal.newAccount("123456")
 ```  
 Example output:  
 ```plaintext  
-"0xe5289037d47c2d1885f2199327a23906fef2af1b"  
+"0xe5289037d47c*********327a23906fef2af1b"  
 ```  
 
 
 ### 7.2 Set the Coinbase Account  
 Set the generated account as the coinbase (mining reward destination):  
 ```bash  
-miner.setEtherbase("0xe5289037d47c2d1885f2199327a23906fef2af1b")  
+miner.setSAVW("0xe5289037d47c2d*********a23906fef2af1b")  
 ```  
 Expected output:  
 ```plaintext  
@@ -185,7 +185,7 @@ true
 ### 8.2 Propose the New Signer  
 Authorize the new node as a signer:  
 ```bash  
-clique.propose("0xe5289037d47c2d1885f2199327a23906fef2af1b", true)  
+clique.propose("0xe5289037d47c2d18******27a23906fef2af1b", true)  
 ```  
 Expected output:  
 ```plaintext  
